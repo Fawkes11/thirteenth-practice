@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+$blue: hsl(223, 87%, 63%);
+$paleblue: hsl(223, 100%, 88%);
+$lightred: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$lightgray: hsla(0, 0%, 59%,0.4);
+$verydarkblue: hsl(209, 33%, 12%);
+$fontglobal: Libre Franklin, sans serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontglobal;
+}
+
+.container{
+    width: 90%;
+    height: 80%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 55px;
+    }
+}
+.main__tittle{
+    text-align: center;
+    margin-top: 40px;
+    color: $gray;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.blue__text{
+    color: $verydarkblue;
+    font-weight: 700;
+}
+.main__info{
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: center;
+    color: $gray;
+    font-weight: 600;
+}
+
+.buttons{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#email__ad, #notify{
+    width: 85%;
+    font-family: $fontglobal;
+    padding: 10px;
+    border-radius: 25px;
+}
+#email__ad{
+    outline: none;
+    padding-left: 35px;
+    border-image: none;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: $paleblue;
+}
+::placeholder{
+    color: $lightgray;
+}
+.email__msg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#alert_msg{
+    display: none;
+    margin-top: 5px;
+    width: 62%;
+    text-align: left;
+    font-size: 0.7rem;
+    color: $lightred;
+}
+#notify{
+    margin-top: 10px;
+    font-weight: 700;
+    border: none;
+    background-color: $blue;
+    color: white;
+    cursor: pointer;
+}
+#notify:hover{
+    background-color: $paleblue;
+}
+.main__img{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 320px;
+    }
+}
+
+.social__reds{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.75rem;
+
+
+    .fab{
+        border: 1px solid $paleblue;
+        padding: 0.5rem;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        color: $blue;        
+    }
+    .fab:hover{        
+        background-color: $blue;
+        color: white;
+        border: 1px solid $blue;        
+    }
+    .fa-facebook-f{
+        padding: 0.5rem 0.7rem;
+    }
+}
+.copyright{
+    color: $gray;
+    font-size: 0.65rem;
+    font-family: $fontglobal;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media (min-width: 600px){
+    .container{
+        width: 545px;
+        height: 80%;
+    }
+    .logo{
+        img{
+            width: 80px;
+        }
+    }
+        
+    .buttons{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    .email__msg{
+    position: relative;
+    }
+    #email__ad{
+        width: 330px;
+    }
+    #alert_msg{
+        position: absolute;
+        bottom: -20px;
+        width: 255px;
+    }
+    
+    #notify{
+        width: 250px;
+        margin-top: 0;
+
+    }
+    .main__img{
+        img{
+            width: 400px;
+        }
+    }
+
+    .social__reds{
+        margin-top: 60px;
+    }    
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 650px;
+        height: 80%;
+    }
+    .main__tittle{
+        font-size: 3rem;
+    }
+    .main__info{
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }        
+    .buttons{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    #email__ad, #notify{
+        width: 85%;
+        font-family: $fontglobal;
+        padding: 20px;
+        border-radius: 30px;
+    }
+    .email__msg{
+        position: relative;
+    }
+    #email__ad{
+        width: 430px;
+    }
+    #alert_msg{
+        position: absolute;
+        bottom: -20px;
+        width: 385px;
+    }    
+    #notify{
+        width: 265px;
+        margin-top: 0;
+    }
+    .main__img{
+        img{
+            width: 620px;
+        }
+    }
+
+    .social__reds{
+        margin-top: 60px;
+    }    
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/69ea42abbe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <h1 class="main__tittle">We are lauching <span class="blue__text">soon!</span></h1>
+    <p class="main__info">Subscribe and get notified</p>
+    <div class="buttons">
+      <div class="email__msg">
+        <input type="email" name="email__address" id="email__ad" placeholder="Your email address...">
+        <p id="alert_msg">Please provide a valid email address</p>
+      </div>      
+      <button id="notify" onclick="validar(email__ad.value)">Notify Me</button>
+    </div>
+    <div class="main__img">
+      <img src="./images/illustration-dashboard.png" alt="ping">
+    </div>
+    <div class="social__reds">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+  </div>
+
+  
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>
